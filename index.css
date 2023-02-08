@@ -1,8 +1,22 @@
 .container{
     display: grid;
     margin: auto;
+    background-color: lightblue
 }
-.container .title{
-    margin: 50px;
-    font-size: 30px;
+.container  div{
+    width: 80%;
+    margin: 1rem auto;
+    font-size: 20px;
+    border: 1px solid red;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: white;
+}
+.number{
+ background-color: blue;
+ color: white;
+ width: 1rem;
+ text-align: center;
+ padding: 10px;
+ border-radius: 10px;
 }
