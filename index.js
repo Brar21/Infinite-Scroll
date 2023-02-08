@@ -7,7 +7,7 @@ let count = 1;
 let posts = 1;
 async function getPosts() {
   const res = await fetch(
-    `https://jsonplaceholder.typicode.com/posts?_limit=${limit}$_page=${count}`
+    `https://jsonplaceholder.typicode.com/posts?_limit=${limit++}$_page=${count}`
   );
   const data = await res.json();
   console.log(data);
@@ -31,7 +31,6 @@ const showMore=() =>
     setTimeout(() =>
     {
         count++;
-        limit+limit
         getPosts()
     },300)
 }
