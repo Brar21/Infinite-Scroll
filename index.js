@@ -1,5 +1,5 @@
 const container=document.querySelector('.container')
-const url='https://api.adorable.io/avatars/'
+const url='http://api.adorable.io/avatars/'
 
 function getImages(n=10)
 {
@@ -12,7 +12,7 @@ function getImages(n=10)
         i++
     }
 }
-
+getImages()
 function getRandom()
 {
     Math.floor(Math.random()*100)
