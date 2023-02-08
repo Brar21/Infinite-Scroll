@@ -2,6 +2,7 @@
     display: grid;
     margin: auto;
 }
-.title{
-    margin: 5px;
+.container .title{
+    margin: 50px;
+    font-size: 30px;
 }
