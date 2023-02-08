@@ -15,7 +15,7 @@ async function getPosts() {
     let container = document.querySelector(".container");
     const data = `
         <div>
-        <p class='number'>${el.id}</p>
+        <p class='number'>${posts++}</p>
         <h1 class='title'>${el.title}</h1>
         <p class='body'>${el.body}</p>
          </div>
@@ -31,6 +31,7 @@ const showMore=() =>
     setTimeout(() =>
     {
         count++;
+        limit+limit
         getPosts()
     },300)
 }
