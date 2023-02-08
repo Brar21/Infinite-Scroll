@@ -12,11 +12,15 @@ async function getImages()
     data.forEach((el,index) =>
     {
         let container=document.querySelector('.container')
+        let div=document.createElement('div')
         let number=document.createElement('p')
+        number.classList.add('number')
         number=el.id
         let title=document.createElement('h1')
+        title.classList.add('title')
         title=el.title
-        container.append(number,title)
+        div.append(number,title)
+        container.append(div)
     })
 }
 getImages()
